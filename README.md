@@ -5,6 +5,5 @@ Usage example:
 ```
 docker run --rm -v `pwd`:/data \
     dimazzzz/protoc-gen-grpc-php \
- 	--php_out=./outputdir \
- 	--grpc-php_out=composer_name=myapp/proto:outputdir app.proto
+    --proto_path=protofiles --php_out=out --grpc_out=out *.proto
 ```
